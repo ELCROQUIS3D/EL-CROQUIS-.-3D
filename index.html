@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL CROQUIS 3D</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Fuente moderna -->
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav>
+            <ul class="nav-logo">
+                <!-- Logo de la página -->
+                <li class="logo">
+                    <a href="#inicio">
+                        <img src="logo.png" alt="Logo de EL CROQUIS 3D" class="logo-img">
+                    </a>
+                </li>
+                <!-- Enlaces de navegación -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="seccion-inicio">
+        <h1>BIENVENIDOS A EL CROQUIS 3D</h1>
+        <p>ESPECIALISTAS EN MODELADO 3D Y PROTOTIPADO.</p>
+        <a href="#servicios" class="btn">Conoce nuestros servicios</a>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="seccion">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-contenido">
+            <article class="servicio">
+                <h3>Modelado 3D</h3>
+                <p>Creación de modelos tridimensionales precisos y detallados para proyectos arquitectónicos y de diseño.</p>
+            </article>
+            <article class="servicio">
+                <h3>Renderizado Fotorrealista</h3>
+                <p>Generación de imágenes fotorrealistas de alta calidad para presentaciones y visualización de proyectos.</p>
+            </article>
+            <article class="servicio">
+                <h3>IMPRECION 3D FDM </h3>
+                <p>Materiales para imprecion PLA, PETG, ABS, TPU.</p>
+            </article>
+            <article class="servicio">
+                <h3>Planos Técnicos</h3>
+                <p>Diseño y generación de planos técnicos detallados a partir de modelos 3D para construcción.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <form id="form-contacto" action="send_email.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 EL CROQUIS 3D. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://www.instagram.com/el.croquis3d/profilecard/?igsh=MWU2cmRqMmRwaGl1Yw==" target="_blank">Instagram</a> | 
+            <a href="https://maps.app.goo.gl/6NyZaNHZL16XXeL16" target="_blank">Google Maps</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
