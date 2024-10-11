@@ -153,6 +153,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 /* Estilo para la barra de navegación */
 header nav ul {
     display: flex;
@@ -172,4 +173,77 @@ header nav ul li.logo {
 .logo-img {
     width: 100px; /* Ajusta el tamaño del logo */
     height: auto;
+}
+
+/* Media Queries para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .seccion-inicio h1 {
+        font-size: 2rem;
+    }
+
+    .seccion-inicio p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .seccion h2 {
+        font-size: 2rem;
+    }
+
+    .servicio h3 {
+        font-size: 1.3rem;
+    }
+    
+    .servicio p {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    .seccion-inicio h1 {
+        font-size: 1.8rem;
+    }
+
+    .seccion-inicio p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .seccion h2 {
+        font-size: 1.8rem;
+    }
+    
+    .servicio h3 {
+        font-size: 1.2rem;
+    }
+
+    .servicio p {
+        font-size: 0.8rem;
+    }
 }
